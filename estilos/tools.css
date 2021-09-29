@@ -1,0 +1,233 @@
+/*==================LINES DESKTOP==================================================*/
+@keyframes animation-line {
+    from {
+        background-color: var(--terceira);
+        width: 700px;
+        height: 1px;
+        left: 60px;
+        box-shadow: 0 0 2px 1px var(--terceira);
+
+    }
+    to {
+        width: 450px;
+        height: 1px;
+        left: 250px;
+        box-shadow: 0 0 2px 1px var(--segunda);
+        background-color: var(--segunda);
+    }
+}
+
+@keyframes animation-line-after {
+    from {
+        width: 40px;
+        height: 1px;
+        left: 0;
+        box-shadow: 0 0 4px 1px var(--terceira);
+    }
+    to {
+        background-color: var(--segunda);
+        width: 1px;
+        height: 1px; 
+        left: 446px;
+        border-radius: 1px;
+        box-shadow: 0 0 4px 1px var(--segunda);
+    }
+}
+
+@keyframes animation-line-blue {
+    from {
+        background-color: var(--terceira);
+        width: 600px;
+        height: 1px;
+        left: 120px;
+        box-shadow: 0 0 2px 1px var(--terceira);
+
+    }
+    to {
+        width: 450px;
+        height: 1px;
+        left: 90px;
+        box-shadow: 0 0 2px 1px var(--segunda);
+        background-color: var(--segunda);
+    }
+}
+
+@keyframes animation-line-blue-after {
+    from {
+        width: 40px;
+        height: 1px;
+        left: 0;
+        box-shadow: 0 0 4px 1px var(--terceira);
+    }
+    to {
+        background-color: var(--segunda);
+        width: 1px;
+        height: 1px; 
+        left: 446px;
+        border-radius: 1px;
+        box-shadow: 0 0 4px 1px var(--segunda);
+    }
+}/*==================LINES TABLET==================================================*/
+@keyframes animation-line-tablet {
+    from {
+        background-color: var(--terceira);
+        width: 1px;
+        height: 100px;
+        top: 350px;
+        box-shadow: 0 0 2px 1px var(--terceira);
+
+    }
+    to {
+        width: 1px;
+        height: 30px;
+        top: 390px;
+        box-shadow: 0 0 2px 1px var(--segunda);
+        background-color: var(--segunda);
+    }
+}
+
+@keyframes animation-line-after-tablet {
+    from {
+        width: 1px;
+        height: 10px;
+        top: 90px;
+        box-shadow: 0 0 4px 1px var(--terceira);
+    }
+    to {
+        background-color: var(--segunda);
+        width: 1px;
+        height: 1px;
+        top: 1px;
+        border-radius: 1px;
+        box-shadow: 0 0 4px 1px var(--segunda);
+    }
+}
+
+@keyframes animation-line-blue-tablet {
+    from {
+        background-color: var(--terceira);
+        width: 1px;
+        height: 30px;
+        top: 350px;
+        box-shadow: 0 0 2px 1px var(--terceira);
+
+    }
+    to {
+        width: 1px;
+        height: 100px;
+        top: 370px;
+        box-shadow: 0 0 2px 1px var(--segunda);
+        background-color: var(--segunda);
+    }
+}
+
+@keyframes animation-line-blue-after-tablet {
+    from {
+        width: 1px;
+        height: 1px;
+        top: 0;
+        box-shadow: 0 0 4px 1px var(--terceira);
+    }
+    to {
+        background-color: var(--segunda);
+        width: 1px;
+        height: 1px;
+        top: 99px; 
+        border-radius: 1px;
+        box-shadow: 0 0 4px 1px var(--segunda);
+    }
+}
+
+
+/*==================LINES MOBILE==================================================*/
+@keyframes animation-line-mobile {
+    from {
+        background-color: var(--terceira);
+        width: 1px;
+        height: 100px;
+        top: 350px;
+        box-shadow: 0 0 2px 1px var(--terceira);
+
+    }
+    to {
+        width: 1px;
+        height: 30px;
+        top: 390px;
+        box-shadow: 0 0 2px 1px var(--segunda);
+        background-color: var(--segunda);
+    }
+}
+
+@keyframes animation-line-after-mobile {
+    from {
+        width: 1px;
+        height: 10px;
+        top: 90px;
+        box-shadow: 0 0 4px 1px var(--terceira);
+    }
+    to {
+        background-color: var(--segunda);
+        width: 1px;
+        height: 1px;
+        top: 1px;
+        border-radius: 1px;
+        box-shadow: 0 0 4px 1px var(--segunda);
+    }
+}
+
+@keyframes animation-line-blue-mobile {
+    from {
+        background-color: var(--terceira);
+        width: 1px;
+        height: 30px;
+        top: 350px;
+        box-shadow: 0 0 2px 1px var(--terceira);
+
+    }
+    to {
+        width: 1px;
+        height: 100px;
+        top: 370px;
+        box-shadow: 0 0 2px 1px var(--segunda);
+        background-color: var(--segunda);
+    }
+}
+
+@keyframes animation-line-blue-after-mobile {
+    from {
+        width: 1px;
+        height: 1px;
+        top: 0;
+        box-shadow: 0 0 4px 1px var(--terceira);
+    }
+    to {
+        background-color: var(--segunda);
+        width: 1px;
+        height: 1px;
+        top: 99px; 
+        border-radius: 1px;
+        box-shadow: 0 0 4px 1px var(--segunda);
+    }
+}
+
+/*==================LIGHT NO PARÁGRAFO==================================================*/
+
+@keyframes light {
+    from {
+        text-shadow: 0 0 1px var(--segunda);
+    }
+    to {
+        text-shadow: 0 0 3px var(--segunda);
+    }
+}
+/*==================ANIMAÇÃO DO BOTÃO DA MÚSICA==================================================*/
+
+@keyframes on-off {
+    from {
+        border-radius: 20px;
+    }
+    to {
+        filter:drop-shadow(0 0 5px var(--segunda));
+        border-radius: 20px;
+    }
+}

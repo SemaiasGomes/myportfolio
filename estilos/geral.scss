@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+body, footer {
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    background: var(--primeira);
+}
+header {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primeira);
+    position: static;
+}
+a {
+    text-decoration: none;
+    display: block;
+    padding: .5rem;
+}
+li {
+    list-style-type: none;
+}
+.dev_front:nth-child(2) {
+    font-weight: 600;
+}
+h2 {
+    color: white;
+    font-weight: 600;
+}
+.gray {
+    color: rgb(165, 165, 165);
+}
+.green, .p {
+    color: var(--segunda);
+    font-weight: 400;
+    text-transform: uppercase;
+}

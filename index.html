@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Um pouco sobre meu trabalho e quem sou...">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/settings.css" type="text/css">
+    <link rel="stylesheet" href="estilos/tools.css" type="text/css">
+    <link rel="stylesheet" href="estilos/geral.css" type="text/css">
+    <link rel="stylesheet" href="estilos/gallery.css" type="text/css">
+    <link rel="stylesheet" href="estilos/gallery.theme.css" type="text/css">
+    <link rel="stylesheet" href="estilos/responsive.css" type="text/css">
+    <link rel="icon" href="img/hexagon.svg" />
+    <title>Semaias Gomes</title>
+</head>
+<header>
+    <nav id="nav-menu">
+        <button id="btn-nav">
+            <span id="hamburguer"></span>
+        </button>
+        <div class="menu">
+            <ul id="menu-ul">
+                <li> <a href="index.html">HOME</a></li>
+                <li> <a href="#works">WORKS</a></li>
+                <li> <a href="#about">ABOUT</a></li>
+                <li> <a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+        
+        <img class="play" onclick="playPause()" src="img/play-circle.svg" width="20px"/>  
+        <iframe src="music/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+        <audio id="player" autoplay loop >
+            <source src="music/airglow.mp3" type="audio/mpeg">
+        </audio>
+
+</header>
+<body>
+    <div class="container">
+
+                <div class="animation">
+                    <div class="line">
+                    </div>
+                    <div class="line-blue">
+                    </div>
+                </div>
+                <div class="dev_front">
+                    <p class="p">HI, I'M</p>
+                    <p>Semaias Oliveira</p>
+                    <p class="p">Front-End Developer<br> 
+                        Web designer</p>
+                </div>
+                    <div class="area">
+                        <div class="works" id="works">
+                            <p class="green">JOBS</p>
+                            <h2>SELECTED WORKS</h2>
+                        </div>
+                        <div class="description">
+                            <p class="green">VERIFICADOR DE IDADE</p>
+                            <p class="gray">Neste job, fiz estes dois pop-ups com design responsivo, um para validar a idade
+                                e o outro para informar sobre o uso de cookies no site.
+                                Se for a primeira vez a acessar o site é exibido ambos os pop-ups, caso contrário,
+                                não é exibido nenhum. <!--pois é salvo as opções através do "LocalStorage", que fica
+                                registrado na máquina do usuário. -->  
+                            </p>
+                        </div>
+                        <div class="amostra">
+                            <div class="gallery items-3">
+                                <div id="item-1" class="control-operator"></div>
+                                <div id="item-2" class="control-operator"></div>
+                                <div id="item-3" class="control-operator"></div>
+                                <figure class="item">
+                                    <img class="imgs" src="img/rota-da-ceva-pc.jpeg"/>
+                                </figure>
+                                <figure class="item">
+                                    <img class="imgs" src="img/verificador.png"/>
+                                </figure>
+                                <figure class="item">
+                                    <img  class="imgMobile" src="img/rota-da-ceva-mobile.jpeg"/>
+                                </figure>
+                                <div class="controls">
+                                    <a href="#item-1" class="control-button">•</a>
+                                    <a href="#item-2" class="control-button">•</a>
+                                    <a href="#item-3" class="control-button">•</a>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="area">
+                        <div class="description">
+                            <p class="green">UM PASSO DE CADA VEZ</p>
+                            <p  class="gray">"A jornada de mil milhas começa com um único passo."<br>
+                                Estou ansioso para o próximo trabalho, não só porquê quero expor aqui em meu portólio,
+                                mas sim porquê quero desenvolver! Estudar sobre novas ferramentas,
+                                tecnologias e aplicá-las aqui tem sido gratificante, por isso, mal posso esperar para mergulhar de
+                                cabeça num próximo projeto/job.</p>
+                        </div>
+                        <div class="amostra">
+                            <img  class="imgs" src="img/beautiful-building-and-architecture-in-yokohama-city-skyline.jpg"/>
+                        </div>
+                    </div>
+                    <div class="area">
+                        <div class="about" id="about">
+                            <p class="green">ABOUT ME</p>
+                            <h2>SEMAIAS GOMES DE OLIVEIRA</h2>
+                        </div>
+                        <div class="description">
+                            <p class="green">Hello, world!</p>
+                            <p class="gray">Tenho 23 anos, sou casado e tenho uma linda filha de 2 anos. 
+                                <br>
+                                <br>
+                                Estou me desenvolvendo e 
+                                buscando conhecimento dia após dia sobre as ferramentas que um Desenvolvedor Front-End
+                                utiliza. Com estudos e dedicação, fiz este portfólio para mostrar um pouco do que
+                                aprendi e o quanto estou disposto a aprender mais.
+                            </p>
+                        </div>
+                        <div class="foto">
+                            <img class="euled" src="img/eu.jpeg" width="300px"/>
+                        </div> 
+                    </div>
+                <div id="contact">
+                    <p class="green">Vamos lá! Entre em...</p>
+                    <h2>CONTATO</h2>
+                    <div class="area-contato">
+                        <div class="email">
+                            <p class="green">Email</p>
+                            <p  class="gray">semaias@yahoo.com</p>
+                        </div>
+                        <div class="fone">
+                            <p class="green">Fone</p>
+                            <p  class="gray">(54) 99258-7777</p>
+                        </div>
+                        <div class="whats">
+                            <p class="green">Whatsapp</p>
+                            <a href="https://api.whatsapp.com/send?phone=5554992587777" target="_blank">
+                                <img class="img-whats" src="img/whatsapp.svg" width="25px"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </body>
+            
+    </div>
+        <footer>
+            <div class= "rodape">
+                <p class="gray">By Semaias Gomes, 2021</p>
+            </div>
+        </footer>
+    <script src="script.js"></script>
+</html>

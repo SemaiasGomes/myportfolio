@@ -1,0 +1,600 @@
+/*@media (max-width:319px){}*/
+
+@media(max-width:480px) {
+    .play {
+        margin-right: 10px;
+        animation-name: on-off;
+        animation-duration: .6s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    .play:hover {
+        box-shadow: 0 0 5px 1px var(--segunda);
+        border-radius: 20px;
+    }
+    .play-onoff {
+        animation: none
+    }
+    .dev_front {
+        margin-top: 100px;
+        margin-bottom: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .dev_front:nth-child(2) {
+        font-size: 42px;
+        text-transform: uppercase;
+        color: white;
+
+    }
+    .dev_front .p {
+        font-size: 18px;
+        font-weight: 300;
+        color: var(--segunda);
+        animation-name: light;
+        animation-duration: .5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    .container {
+        margin: 0 20px 0 20px;
+    }
+    .imgs {
+        width: 100%;
+    }
+    .imgMobile {
+        width: 40%;
+    }
+    .area {
+        margin-top: 70px;
+        .works {
+            padding-bottom: 20px;
+        }
+    }
+    .amostra {
+        margin-top: 20px;
+    }
+    .about {
+        padding-top: 70px;
+    }
+    .description {
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+    .foto {
+        display: flex;
+        justify-content: center;
+    }
+    #contact {            
+        text-align: center;
+        margin-top: 120px;
+        margin-bottom: 100px;
+        .area-contato {
+            margin-top: 80px;
+            .fone, .whats {
+                margin-top: 20px;
+            }
+        }
+    }
+    .rodape {   
+        background: rgba(255, 255, 255, 0.2);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.185), rgba(128, 128, 128, 0.2));
+        border: 1px solid rgba(255, 255, 255, 0.082);
+        box-shadow: -2px -2px 5px black;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        font-size: 12px;
+        color: #ffff;
+        ul {
+            display: flex;
+            list-style: none;
+            li {
+                padding: 10px;
+                a  {
+                    color: #ffff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+/*ANIMAÇÃO===============================*/
+    .line {
+        left: 48%;
+        float: left;
+        position: absolute;
+        z-index: 10;
+        animation-name: animation-line-mobile;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    .line::after {
+        content: '';
+        display: block;
+        float: left;
+        z-index: 10;
+        position: absolute;
+        animation-name: animation-line-after-mobile;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    .line-blue {
+        left: 50%;
+        float: left;
+        position: absolute;
+        z-index: 10;
+        animation-name: animation-line-blue-mobile;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    .line-blue::after {
+        content: '';
+        display: block;
+        float: left;
+        z-index: 10;
+        position: absolute;
+        animation-name: animation-line-blue-after-mobile;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+/*BOTÃO TOGGLE============================*/    
+    #btn-nav {
+        margin-left: 10px;
+        display: flex;
+        cursor: pointer;
+        background: none;
+        gap: .5rem;
+        border: none;
+    }
+    .hide {
+        visibility: hidden;
+    }
+    #hamburguer {
+        width: 20px;
+        border-top: 1px solid;
+        color: var(--segunda);
+        display: block;
+    }
+    #hamburguer::after, #hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 1px;
+        background: currentColor;
+        margin-top: 5px;
+        position: relative;
+        transition: .3s;
+    }
+    #nav-menu.active #hamburguer {
+        border-top-color: transparent;
+    }
+    #nav-menu.active #hamburguer::before{
+        transform: rotate(135deg);
+    }
+    #nav-menu.active #hamburguer::after{
+        transform: rotate(-135deg);
+        top: -6px;
+    }
+    #menu-ul {
+        background-color: rgb(8, 8, 8);
+        position: absolute;
+        display: block;
+        padding-top: 40px;
+        top: 50px;
+        right: 0;
+        width: 100%;
+        visibility: hidden;
+        transition: .6s;
+        overflow-y: hidden;
+        height: 0px;
+        z-index: 1000;
+    }
+    #nav-menu.active #menu-ul {
+        height: 90vh;
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #menu-ul a {
+        padding: 15px 0;
+        margin: 0 25px;
+        border-bottom: 1px solid var(--segunda);
+        color: white;
+    }
+}
+@media (min-width:481px) and (max-width:801px) {
+    .play {
+        margin-right: 10px;
+        animation-name: on-off;
+        animation-duration: .6s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    .play:hover {
+        box-shadow: 0 0 5px 1px var(--segunda);
+        border-radius: 20px;
+    }
+    .play-onoff {
+        animation: none
+    }
+    .dev_front {
+        margin-top: 100px;
+        margin-bottom: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .dev_front:nth-child(2) {
+        font-size: 42px;
+        text-transform: uppercase;
+        color: white;
+
+    }
+    .dev_front .p {
+        font-size: 18px;
+        font-weight: 300;
+        color: var(--segunda);
+        animation-name: light;
+        animation-duration: .5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    .container {
+        margin: 0 20px 0 20px;
+    }
+    .imgs {
+        width: 100%;
+    }
+    .imgMobile {
+        width: 40%;
+    }
+    .area {
+        margin-top: 70px;
+        .works {
+            padding: 50px 0 20px 0;
+        }
+    }
+    .amostra {
+        margin-top: 20px;
+    }
+    .about {
+        padding-top: 70px;
+    }
+    .description {
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+    .foto {
+        display: flex;
+        justify-content: center;
+    }
+    #contact {            
+        text-align: center;
+        margin-top: 120px;
+        margin-bottom: 100px;
+        .area-contato {
+            margin-top: 80px;
+            .fone, .whats {
+                margin-top: 20px;
+            }
+        }
+    }
+    .rodape {   
+        background: rgba(255, 255, 255, 0.2);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.185), rgba(128, 128, 128, 0.2));
+        border: 1px solid rgba(255, 255, 255, 0.082);
+        box-shadow: -2px -2px 5px black;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        font-size: 12px;
+        color: #ffff;
+        ul {
+            display: flex;
+            list-style: none;
+            li {
+                padding: 10px;
+                a  {
+                    color: #ffff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+/*ANIMAÇÃO===============================*/
+    .line {
+        left: 48%;
+        float: left;
+        position: absolute;
+        z-index: 10;
+        animation-name: animation-line-tablet;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    .line::after {
+        content: '';
+        display: block;
+        float: left;
+        z-index: 10;
+        position: absolute;
+        animation-name: animation-line-after-tablet;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    .line-blue {
+        left: 50%;
+        float: left;
+        position: absolute;
+        z-index: 10;
+        animation-name: animation-line-blue-tablet;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    .line-blue::after {
+        content: '';
+        display: block;
+        float: left;
+        z-index: 10;
+        position: absolute;
+        animation-name: animation-line-blue-after-tablet;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+/*BOTÃO TOGGLE============================*/    
+    #btn-nav {
+        margin-left: 10px;
+        display: flex;
+        cursor: pointer;
+        background: none;
+        gap: .5rem;
+        border: none;
+    }
+    .hide {
+        visibility: hidden;
+    }
+    #hamburguer {
+        width: 20px;
+        border-top: 1px solid;
+        color: var(--segunda);
+        display: block;
+    }
+    #hamburguer::after, #hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 1px;
+        background: currentColor;
+        margin-top: 5px;
+        position: relative;
+        transition: .3s;
+    }
+    #nav-menu.active #hamburguer {
+        border-top-color: transparent;
+    }
+    #nav-menu.active #hamburguer::before{
+        transform: rotate(135deg);
+    }
+    #nav-menu.active #hamburguer::after{
+        transform: rotate(-135deg);
+        top: -6px;
+    }
+    #menu-ul {
+        background-color: rgb(8, 8, 8);
+        position: absolute;
+        display: block;
+        padding-top: 40px;
+        top: 50px;
+        right: 0;
+        width: 100%;
+        visibility: hidden;
+        transition: .6s;
+        overflow-y: hidden;
+        height: 0px;
+        z-index: 1000;
+    }
+    #nav-menu.active #menu-ul {
+        height: 90vh;
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #menu-ul a {
+        padding: 15px 0;
+        margin: 0 25px;
+        border-bottom: 1px solid var(--segunda);
+        color: white;
+    }
+}
+@media (min-width:802px){
+    .play {
+        bottom: 20px;
+        right: 20px;
+        position: fixed;
+        cursor: pointer;
+        width: 25px;
+        animation-name: on-off;
+        animation-duration: .6s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    .play:hover {
+        box-shadow: 0 0 5px 1px var(--segunda);
+        border-radius: 20px;
+    }
+    .play-onoff {
+        animation: none
+    }
+    .container {
+        margin: 0 50px 0 50px;
+    }
+    .line {
+        top: 460px;
+        float: left;
+        position: absolute;
+        z-index: 10;
+        animation-name: animation-line;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    .line::after {
+        content: '';
+        display: block;
+        float: left;
+        z-index: 10;
+        position: absolute;
+        animation-name: animation-line-after;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    
+    .line-blue {
+        top: 480px;
+        float: left;
+        position: absolute;
+        z-index: 10;
+        animation-name: animation-line-blue;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    .line-blue::after {
+        content: '';
+        display: block;
+        float: left;
+        z-index: 10;
+        position: absolute;
+        animation-name: animation-line-blue-after;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    #btn-nav {
+        display: none;
+    }
+    header {
+        margin-top: 20px;
+        position: sticky;
+        top: 0;
+        height: 100%;
+        z-index: 3000;
+    }
+    .menu {
+        /*border: 1px solid red;*/
+        background-color: var(--primeira);
+
+    }
+    .menu ul {
+        padding: 10px 0 0 50px;
+        display: flex;
+        list-style: none;
+        li{
+            padding-right: 20px;
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    
+    }
+
+    .menu ul li a:after {
+        margin-top: 10px;
+        height: 1px;
+        display:block;
+        content: '';
+       /* border-bottom: solid 1px var(--segunda); */ 
+        transform: scaleX(0);  
+        transition: transform 500ms ease-in-out;
+        background-color: var(--segunda);
+        box-shadow: 0 0 5px var(--segunda);
+    }
+    .menu ul li a:hover:after {
+        transform: scaleX(1);
+        box-shadow: 0 0 5px var(--segunda);
+        background-color: var(--segunda);
+    }
+    .imgs {
+        width: 50%;
+    }
+@mixin marginTop {
+    margin-top: 50px;
+}
+    .amostra {
+        @include marginTop;
+        display: flex;
+        justify-content: center;
+        .imgMobile {
+            width: 20%;
+        }
+    }
+    .dev_front {
+        margin-top: 150px;
+        color: #fff;
+        text-transform: uppercase;
+        .p {
+            font-size: 26px;
+        }
+        p {
+            font-size: 66px;
+        }
+    }
+    .area {
+        .works {
+            margin-top: 350px;
+        }
+        .description {
+            @include marginTop;
+        }
+    }
+    .about, #contact{
+        margin-top: 200px;
+    }
+    .area-contato {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+        margin-bottom: 200px;
+    }
+    .foto {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .rodape {   
+        background: rgba(255, 255, 255, 0.2);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.185), rgba(128, 128, 128, 0.2));
+        border: 1px solid rgba(255, 255, 255, 0.082);
+        box-shadow: -2px -2px 5px black;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        font-size: 12px;
+        color: #ffff;
+        ul {
+            display: flex;
+            list-style: none;
+            li {
+                padding: 10px;
+                a  {
+                    color: #ffff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
